@@ -1,22 +1,16 @@
 import './index.css'
 import { FaTrashCan } from "react-icons/fa6";
-
+import api from '../../services/api';
+import { useEffect } from 'react';
 export function Home() {
 
-  const users = [
-    {
-    id: 'isodj01238012',
-    name: "Maia Mateues",
-    age: "20",
-    email: "maia@gmail.com"
-  },
-  {
-    id: 'isdoawdadj01238012',
-    name: "Amna",
-    age: "23",
-    email: "amna@gmail.com"
-  }
-]
+let users = []
+async function getUsers(){
+  users =  await api.get('/users')
+}
+useEffect(() => {
+  getUsers()
+}, [])
 
   return (
     <div className='container'>
