@@ -4,9 +4,10 @@ import api from '../../services/api';
 import { useEffect, useState } from 'react';
 export function Home() {
   const [users, setUsers] = useState([])
-  
+
   async function getUsers(){
-    setUsers(await api.get('/users'))
+    const usersFetch = await api.get('/users')
+    setUsers(usersFetch.data)
   }
 
   useEffect(() => {
