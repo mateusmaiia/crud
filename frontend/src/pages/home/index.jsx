@@ -30,11 +30,11 @@ export function Home() {
 
        {users.map(user => {
         return(
-          <div key={user.id}>
+          <div key={user.id} className='card'>
             <div>
-              <p>Nome: {user.name}</p>
-              <p>Idade: {user.age}</p>
-              <p>Email: {user.email}</p>
+              <p>Nome: <span>{user.name}</span></p>
+              <p>Idade:<span>{user.age}</span> </p>
+              <p>Email: <span>{user.email}</span></p>
             </div>
             <span>
               <FaTrashCan size={20} /> 
