@@ -72,4 +72,9 @@ form{
     border: none;	
     cursor: pointer;
   }
+
+  & button:hover{
+    opacity: 0.8;
+    transition: opacity 0.1s ease-in-out;
+  }
 }
