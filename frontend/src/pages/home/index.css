@@ -47,3 +47,23 @@ form{
         outline: none;
     }
 }
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2E2D4E;
+  margin: 10px;
+  gap: 30px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+
+  & p{
+    color: #fff;
+    font-weight: bold;
+  }
+
+  & span{
+    font-weight: normal;
+  }
+}
