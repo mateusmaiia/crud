@@ -14,7 +14,7 @@ const formSchema = z.object({
 })
 export function Home() {
   const [users, setUsers] = useState([])
-  const {register, handleSubmit} = useForm({
+  const {register, handleSubmit, reset} = useForm({
     resolver: zodResolver(formSchema),
   })
 
@@ -31,6 +31,7 @@ export function Home() {
         email: data.email,
       })
       setUsers(prevUsers => [...prevUsers, userCreated.data])
+      reset()
     } catch (error) {
       console.error(error)
     }
