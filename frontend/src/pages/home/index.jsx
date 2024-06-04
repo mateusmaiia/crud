@@ -36,9 +36,9 @@ export function Home() {
               <p>Idade:<span>{user.age}</span> </p>
               <p>Email: <span>{user.email}</span></p>
             </div>
-            <span>
-              <FaTrashCan size={20} /> 
-            </span>
+            <button>
+              <FaTrashCan size={20} color='red' /> 
+            </button>
           </div>
         )
        })}
