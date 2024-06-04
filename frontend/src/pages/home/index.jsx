@@ -22,9 +22,9 @@ export function Home() {
     <div className='container'>
       <form>
         <h1>Cadastro de usuário </h1>
-        <input name='nome' type='text'/> 
-        <input name='idade' type='number'/> 
-        <input name='email' type='email'/> 
+        <input placeholder='Nome:' name='nome' type='text'/> 
+        <input placeholder='Idade:' name='idade' type='number'/> 
+        <input placeholder='Email:' name='email' type='email'/> 
         <button type="button"> Cadastrar</button>
       </form>
 
