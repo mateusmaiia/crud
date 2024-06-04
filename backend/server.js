@@ -58,7 +58,7 @@ app.get("/users", ( async (req, res) => {
             }
         })
     }else{
-        users = prisma.users.findMany()
+        users = prisma.user.findMany()
     }
 
     res.status(200).json(users)
