@@ -27,6 +27,23 @@ form{
         height: 40px;
         border: none;
         font-weight: bold;
-        cursor: pointer
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    & input{
+        border: 1px solid #4e456c;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: #363653;
+        height: 40px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        padding-left: 10px;
+        outline: none;
     }
 }
