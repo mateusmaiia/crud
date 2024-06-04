@@ -24,12 +24,16 @@ export function Home() {
   }
 
   async function createUsers(data){
-    const userCreated = await api.post("/users", {
-      name: data.name,
-      age: data.age,
-      email: data.email,
-    })
-    setUsers(prevUsers => [...prevUsers, userCreated.data])
+    try {
+      const userCreated = await api.post("/users", {
+        name: data.name,
+        age: data.age,
+        email: data.email,
+      })
+      setUsers(prevUsers => [...prevUsers, userCreated.data])
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   async function deleteUser(id){
