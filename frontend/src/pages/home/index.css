@@ -35,6 +35,7 @@ form{
     & input{
         border: 1px solid #4e456c;
         padding: 10px;
+        padding-left: 13px;
         border-radius: 30px;
         background-color: #363653;
         height: 40px;
@@ -42,8 +43,7 @@ form{
         font-weight: bold;
         cursor: pointer;
         color: #fff;
-        font-size: 16px;
-        padding-left: 10px;
+        font-size: 15px;
         outline: none;
     }
 }
